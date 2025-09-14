@@ -59,6 +59,7 @@ git clone https://github.com/yourusername/product-list-app.git
 cd product-list-app
 
 3️⃣ Install Dependencies
+
 npm install
 
 
