@@ -1,97 +1,85 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Product List App
 
-# Getting Started
+A React Native app that displays products from DummyJSON API
+ with search, category filters, and lazy loading.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+#  🎯 Objective
 
-## Step 1: Start Metro
+Create a product listing interface that:
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+Fetches products from a fake API
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+Displays them in a grid
 
-```sh
-# Using npm
-npm start
+Supports search and category-based filtering
 
-# OR using Yarn
-yarn start
-```
+Implements infinite scroll (lazy loading) for smooth performance
 
-## Step 2: Build and run your app
+✅ Features
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+✅ Display products in a grid layout
 
-### Android
+✅ Search functionality to find products by name
 
-```sh
-# Using npm
-npm run android
+✅ Filter products by category
 
-# OR using Yarn
-yarn android
-```
+✅ Infinite scroll (lazy loading) to load more products as the user scrolls
 
-### iOS
+✅ FlatList performance optimizations:
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+initialNumToRender
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+removeClippedSubviews
 
-```sh
-bundle install
-```
+getItemLayout
 
-Then, and every time you update your native dependencies, run:
+# ⚡ Concepts Covered
 
-```sh
-bundle exec pod install
-```
+React Native FlatList usage and optimization
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+API integration with DummyJSON
 
-```sh
-# Using npm
-npm run ios
+Search and filter logic
 
-# OR using Yarn
-yarn ios
-```
+Infinite scroll / lazy loading
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+Performance optimization for large lists
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+# 🚀 Setup & Installation
+1️⃣ Prerequisites
 
-## Step 3: Modify your app
+Node.js (Recommended ≥16.x)
 
-Now that you have successfully run the app, let's make changes!
+React Native CLI (without Expo)
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+Android Studio or Xcode
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+2️⃣ Clone the Repository
+git clone https://github.com/yourusername/product-list-app.git
+cd product-list-app
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+3️⃣ Install Dependencies
+npm install
 
-## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
+Or with yarn:
 
-### Now what?
+yarn install
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+4️⃣ Run on Android
+npx react-native run-android
 
-# Troubleshooting
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+Or run on iOS:
 
-# Learn More
+npx react-native run-ios
 
-To learn more about React Native, take a look at the following resources:
+# ⚠️ Notes
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+The app fetches data from DummyJSON API, which is a fake API for testing.
+
+FlatList optimizations ensure smooth scrolling even with large datasets.
+
+📄 License
+
+MIT License
